@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/Players/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Blocks/GroundTileset.tres" type="TileSet" id=2]
+[ext_resource path="res://scenes/Enemies/Enemy.tscn" type="PackedScene" id=4]
+
+[node name="MainScene" type="Node2D"]
+position = Vector2( 122.898, 8.47571 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( -74.898, 447.524 )
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2( 5.102, -0.47571 )
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -131084, 0, 0, -196551, 0, 0, 131060, 0, 0, 65593, 0, 0, 393204, 0, 0, 327688, 0, 0, 327692, 0, 0, 327696, 0, 0, 327703, 0, 0, 327737, 0, 0, 458780, 0, 0, 524321, 0, 0, 655348, 0, 0, 589881, 0, 0, 720892, 0, 0, 655360, 0, 0, 917492, 0, 0, 852025, 0, 0, 917546, 0, 0, 917550, 0, 0, 917554, 0, 0, 983045, 0, 0, 983049, 0, 0, 1179636, 0, 0, 1114169, 0, 0, 1245199, 0, 0, 1310758, 0, 0, 1441780, 0, 0, 1376289, 0, 0, 1376313, 0, 0, 1507356, 0, 0, 1703924, 0, 0, 1638457, 0, 0, 1966068, 0, 0, 1900601, 0, 0, 2228216, 0, 0, 2228220, 0, 0, 2162688, 0, 0, 2162692, 0, 0, 2162696, 0, 0, 2162700, 0, 0, 2162704, 0, 0, 2162708, 0, 0, 2162712, 0, 0, 2162716, 0, 0, 2162720, 0, 0, 2162724, 0, 0, 2162728, 0, 0, 2162732, 0, 0, 2162736, 0, 0, 2162740, 0, 0, 2162744, 0, 0 )
+
+[node name="Enemy" parent="." instance=ExtResource( 4 )]
+position = Vector2( 744.102, 75.524 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 573.102, 463.524 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 165.102, 15.5243 )
